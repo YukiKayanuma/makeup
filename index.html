@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+$(function(){
+   $('a[href^="#"]').click(function() {
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top -70;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+</head>
+
+<body>
+    <header>
+        <h1>CodeVillage</h1>
+        <div class="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#company">Company</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-sp">
+            <ul>
+                <li><a href="#mission">Mission</a></li>
+                <hr>
+                <li><a href="#service">Service</a></li>
+                <hr>
+                <li><a href="#company">Company</a></li>
+                <hr>
+                <li><a href="#contact">Contact</a></li>
+                <hr>
+            </ul>
+        </nav>
+    </header>
+    <section class="If">
+        <div class="If-wrap">
+            <h2>If today were the last day of my life,</h2>
+            <h2>would I want to do what I am about to do today?</h2>
+        </div>
+    </section>
+    <section id="mission">
+        <h3>Mission</h3>
+        <p>missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。</p>
+        <p>missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。</p>
+        <p>missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。</p>
+    </section>
+    <section id="service">
+        <h4>Service</h4>
+        <div class="service-wrap">
+            <div class="service-item">
+                <img src="./img/business1.jpg" alt="">
+                <h5>ビジネスA</h5>
+                <p>ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。</p>
+            </div>
+            <div class="service-item">
+                <img src="./img/business2.jpg" alt="">
+                <h5>ビジネスB</h5>
+                <p>ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。</p>
+            </div>
+            <div class="service-item">
+                <img src="./img/business3.jpg" alt="">
+                <h5>ビジネスC</h5>
+                <p>ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。</p>
+        </div>  
+    </div>  
+    </section>
+    <section id="company">
+        <h6>Company</h6>
+        <div class="company-item">
+            <p class="p-first">会社名</p>
+            <p class="p-last p-last1">株式会社CodeVillage</p>
+        </div>
+        <div class="company-item">
+            <p class="adress">住所</p>
+            <div class="adress-wrap">
+                <p class="p-adress">〒111-1111</p>
+                <p class="p-adress1">東京豊島区1-11-1</p>
+            </div>
+        </div>
+        <div class="company-item">
+            <p class="p-first">TEL</p>
+            <p class="p-last">03-1234-5678</p>
+        </div>
+        <div class="company-item">
+            <p class="p-first">FAX</p>
+            <p class="p-last">03-1234-5678</p>
+        </div>
+        <div class="company-item">
+            <p class="business">事業内容</p>
+            <div class="business-wrap">
+                <p>事業内容1</p>
+                <p>事業内容2</p>
+                <p>事業内容3</p>
+                <p>事業内容4</p>
+                <p>事業内容5</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h7>Contact</h7>
+        <div class="contact-wrap">
+            <div class="contact-item">
+                <p>会社名</p>
+                <p>お名前</p>
+                <p>Email</p>
+                <p>tel</p>
+            </div>
+            <div class="contact-item">
+                <p class="last-p">お問い合わせ内容</p>
+            </div>
+        </div>
+        <div class="send-wrap">
+            <p>Send</p>
+        </div>    
+        <footer>
+            <p>Copyright2019 CodeVillage inc. All Rights Reserved</p>
+        </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
